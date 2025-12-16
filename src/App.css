@@ -1,0 +1,42 @@
+/* App.css */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2a2f34;
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+/* خلفية أسهم السلايدر */
+.custom-carousel button {
+  background-color: #31eace !important; /* لون الخلفية */
+  color: white !important;               /* لون السهم */
+  border-radius: 100% !important;         /* تعطي شكل مربع ناعم */
+  backdrop-filter: blur(6px);
+}
+
+/* عند تمرير الماوس */
+.custom-carousel button:hover {
+  background-color: #00bcbc !important;
+}
+

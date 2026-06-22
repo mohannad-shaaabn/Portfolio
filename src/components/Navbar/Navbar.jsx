@@ -47,8 +47,8 @@ export default function Navbar() {
     if (q.includes("home")) {
       document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
       setQuery("");
-    } else if (q.includes("blogs")) {
-      document.getElementById("blogs")?.scrollIntoView({ behavior: "smooth" });
+    } else if (q.includes("services")) {
+      document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
       setQuery("");
     } else if (q.includes("skills")) {
       document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
@@ -64,7 +64,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Navbar العلوي */}
       <nav
         className={`fixed top-0 md:top-3 left-1/2 -translate-x-1/2 w-full md:w-[90%] z-50 duration-200
     ${
@@ -85,7 +84,7 @@ export default function Navbar() {
             </span>
           </a>
 
-          {/* زر الموبايل */}
+          
           <button
             onClick={() => setMenuOpen(true)}
             className="md:hidden text-white"
@@ -104,8 +103,6 @@ export default function Navbar() {
               />
             </svg>
           </button>
-
-          {/* روابط الديسكتوب */}
           <ul className="hidden md:flex md:space-x-6 lg:space-x-8 font-second font-light items-center">
             <li>
               <a href="#home" className={linkClass("home")}>
@@ -113,8 +110,8 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#blogs" className={linkClass("blogs")}>
-                Blogs
+              <a href="#services" className={linkClass("services")}>
+                services
               </a>
             </li>
             <li>
@@ -165,7 +162,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* الخلفية الشفافة */}
+      
       <div
         className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
           menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -173,7 +170,7 @@ export default function Navbar() {
         onClick={() => setMenuOpen(false)}
       ></div>
 
-      {/* القائمة الجانبية */}
+      
       <aside
         className={`fixed top-0 left-0 w-64 h-full bg-[#1b2a2a] z-50 transform transition-transform duration-300 md:hidden ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
@@ -200,11 +197,11 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#blogs"
-              className={linkClass("blogs")}
+              href="#services"
+              className={linkClass("services")}
               onClick={() => setMenuOpen(false)}
             >
-              Blogs
+              Services
             </a>
           </li>
           <li>
@@ -271,3 +268,4 @@ export default function Navbar() {
     </>
   );
 }
+

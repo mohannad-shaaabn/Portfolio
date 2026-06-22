@@ -1,6 +1,11 @@
 import React from "react";
 import profilphoto from "../../assets/my-photo.png";
+import DecryptedText from "../reactbits/DecryptedText";
 export default function Home() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="home"
@@ -9,14 +14,55 @@ export default function Home() {
       <div className="p-4 sm:p-0 relative">
         <h1 className="text-6xl text-[#98FAEC] text-center">Developer</h1>
         <div className="icons hidden sm:flex bg-[#1e1c21] absolute top-7 left-2 lg:top-5 lg:left-0 border border-white rounded-full text-white flex flex-col gap-4 px-2 py-3">
-          <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+          <button
+            type="button"
+            onClick={() => scrollToSection("home")}
+            className="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+            aria-label="Go to home section"
+          >
             <i className="fa-solid fa-border-all text-[#1e1c21]" />
-          </div>
-          <i className="fa-regular fa-user" />
-          <i className="fa-solid fa-code" />
-          <i className="fa-solid fa-tv" />
-          <i className="fa-solid fa-pen-to-square" />
-          <i className="fa-solid fa-envelope" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToSection("aboutme")}
+            className="hover:text-tirquoize transition-colors"
+            aria-label="Go to about section"
+          >
+            <i className="fa-regular fa-user" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToSection("skills")}
+            className="hover:text-tirquoize transition-colors"
+            aria-label="Go to skills section"
+          >
+            <i className="fa-solid fa-code" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToSection("works")}
+            className="hover:text-tirquoize transition-colors"
+            aria-label="Go to works section"
+          >
+            <i className="fa-solid fa-tv" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToSection("services")}
+            className="hover:text-tirquoize transition-colors"
+            aria-label="Go to case studies section"
+          >
+            <i className="fa-solid fa-rocket" />
+
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollToSection("education")}
+            className="hover:text-tirquoize transition-colors"
+            aria-label="Go to contact section"
+          >
+            <i className="fa-solid fa-envelope" />
+          </button>
         </div>
         <div className="md:w-[82%] lg:w-[90%] mx-auto">
           <div className="flex flex-col md:flex-wrap lg:flex-nowrap  md:flex-row md:items-center gap-7 lg:gap-16  items-center mt-5">
@@ -78,7 +124,7 @@ export default function Home() {
                   </span>
                 </div>
                 <a
-                  href="/Mohannad-shaaban_Resume.pdf" //
+                  href="/Mohannad-shaaban_Resume.pdf" //ـ
                   download
                   className=" mt-2 bg-white py-2 px-4 rounded-full hover:bg-white/10 hover:font-bold hover:text-white hover:backdrop-blur-sm shadow-inner hover:shadow-blue-300/50 overflow-hidden flex items-center justify-center gap-2"
                 >
@@ -93,7 +139,11 @@ export default function Home() {
                 I'm <span className="text-tirquoize">Mohannad</span>,
               </h2>
               <h2 className="text-3xl whitespace-nowrap text-white md:min-w-[400px]">
-                Front-end Developer
+                <DecryptedText
+                  text="Front-end Developer"
+                  speed={45}
+                  className="text-tirquoize"
+                />
               </h2>
 
               <p className="text-white font-second font-light mt-6">
@@ -129,3 +179,4 @@ export default function Home() {
     </section>
   );
 }
+

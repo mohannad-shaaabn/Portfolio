@@ -1,0 +1,78 @@
+{
+  "identity": {
+    "fullName": "Mohannad Shaaban",
+    "firstName": "Mohannad",
+    "displayName": "Mohannad",
+    "role": "Front-end Developer",
+    "headline": "Developer",
+    "shortIntro": "I build interactive websites and always eager to learn new technologies.",
+    "about": "My name is Mohannad and I specialize in web development that utilizes HTML, CSS, JS, and React. I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving. When I'm not coding, I am writing blogs, reading, or picking up some new hands-on art project like photography. I like to have my perspective and belief systems challenged so that I see the world through new eyes."
+  },
+  "personalInfo": {
+    "age": 21,
+    "location": "Egypt",
+    "availability": "Full-time / Freelancer",
+    "website": "www.mohannad.com"
+  },
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Vue"
+  ],
+  "highlights": [
+    {
+      "value": 6,
+      "label": "Built Creative Interfaces"
+    },
+    {
+      "value": 8,
+      "label": "Mastered Modern Tools"
+    },
+    {
+      "value": 1,
+      "label": "Gained Valuable Skills"
+    }
+  ],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/mohanad_yousef_23",
+    "linkedin": "https://www.linkedin.com/in/mohannad-shaaban-59b47b371/",
+    "github": "https://github.com/mohannad-shaaabn"
+  },
+  "projects": [
+    {
+      "name": "BuyNest",
+      "repoUrl": "https://github.com/mohannad-shaaabn/BuyNest",
+      "description": "A modern e-commerce website for browsing products, managing a shopping cart, and enjoying a smooth, user-friendly buying experience."
+    },
+    {
+      "name": "Fresh Cart",
+      "repoUrl": "https://github.com/mohannad-shaaabn/FreshCart",
+      "description": "A modern e-commerce website inspired by Fresh Cart, designed for browsing products, managing a shopping cart, and enjoying a smooth, user-friendly shopping experience."
+    },
+    {
+      "name": "Weather Website",
+      "repoUrl": "https://github.com/mohannad-shaaabn/weather-app",
+      "description": "A simple weather website that shows real-time weather conditions and forecasts with a clean, easy-to-use interface."
+    }
+  ],
+  "blog": {
+    "author": "Mohannad",
+    "title": "What does it take to become a web developer?",
+    "date": "2025-11-23",
+    "readTime": "1 Min"
+  },
+  "assets": {
+    "photo": "src/assets/my-photo.png",
+    "resume": "public/Mohannad-shaaban_Resume.pdf"
+  },
+  "sourceNotes": {
+    "normalizedSpelling": [
+      {
+        "from": "Eygept",
+        "to": "Egypt"
+      }
+    ]
+  }
+}

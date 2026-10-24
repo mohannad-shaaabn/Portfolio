@@ -124,7 +124,7 @@ export default function Home() {
                   </span>
                 </div>
                 <a
-                  href="/public/Mohannad_Yousef_Resume.pdf" //ـ
+                  href="Mohannad_Yousef_Resume.pdf" //ـ
                   download
                   className=" mt-2 bg-white py-2 px-4 rounded-full hover:bg-white/10 hover:font-bold hover:text-white hover:backdrop-blur-sm shadow-inner hover:shadow-blue-300/50 overflow-hidden flex items-center justify-center gap-2"
                 >

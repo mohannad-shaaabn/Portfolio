@@ -91,23 +91,23 @@ export default function Home() {
                   <i className="fa-solid fa-location-dot text-tirquoize" />
 
                   <h3 className="text-white font-second font-extralight">
-                    Eygept
+                    Canada
                   </h3>
                 </div>
                 <div className="flex items-center gap-2">
                   <i className="fa-solid fa-suitcase text-tirquoize" />
 
                   <h3 className="text-white font-second font-extralight whitespace-nowrap">
-                    Full-time / Freelancer
+                    Open to Opportunities
                   </h3>
                 </div>
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <i className="fa-solid fa-link text-tirquoize" />
 
                   <h3 className="text-white font-second font-extralight">
                     www.mohannad.com
                   </h3>
-                </div>
+                </div> */}
 
                 <div className="flex items-center gap-1 font-second font-light">
                   <span className="text-xs bg-tirquoize p-1 rounded-full text-center">
@@ -124,7 +124,7 @@ export default function Home() {
                   </span>
                 </div>
                 <a
-                  href="/Mohannad-shaaban_Resume.pdf" //ـ
+                  href="/public/Mohannad_Yousef_Resume.pdf" //ـ
                   download
                   className=" mt-2 bg-white py-2 px-4 rounded-full hover:bg-white/10 hover:font-bold hover:text-white hover:backdrop-blur-sm shadow-inner hover:shadow-blue-300/50 overflow-hidden flex items-center justify-center gap-2"
                 >
